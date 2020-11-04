@@ -1,0 +1,483 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+.pyonpyon span {
+    animation: pyon 0.3s linear;
+    position: relative;
+}
+
+@keyframes pyon {
+    0% {top: 0}
+    50% {top:-17px}
+    100%{top: 0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all-wrapper{
+	width:960px;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+
+.header-wrapper{
+	background:url(../img/mainbg.png);
+	background-size:cover;
+	background-position: center;
+	align-items: center;
+	text-align: center;
+	height:500px;
+
+}
+
+.nav{
+ width:100%;
+background-color: #efefef;
+}
+
+.nav-wrapper{
+display:flex; 
+justify-content:center;
+justify-content:space-between;
+width: 960px;
+height: 80px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.title-img {
+	color:white;
+	background-position:center;
+	height:500px;
+	display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+
+.logo{
+	height: 55px;
+	object-fit: cover;
+}
+
+	
+.box-left{
+display:flex; 
+justify-content: left;
+flex: left;
+align-items: center;
+width: 40%;
+}
+
+.box-right{
+display:flex;
+justify-content: center;
+align-items: center;
+justify-content: space-between;
+width: 60%;
+}
+
+.box-right-text{
+	display:flex;
+justify-content: space-between;
+font-size: 21px;
+font-weight: bold;
+}
+
+h1{
+	margin: 0;
+	font-size:48px;
+}
+
+h3{
+	font-size: 24px;
+	padding-top: 64px;
+	padding-bottom: 24px;
+}
+
+.yellow{
+	color: #ffd61a;
+}
+
+h4{
+	columns: #222222;
+	font-size: 24px;
+	padding-bottom: 40px;
+}
+
+.top-catch{
+	padding-top: 5px;
+}
+
+/*アバウト*/
+
+.about{
+	width: 660px;
+}
+
+.about-wrapper{
+width: 960px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.about-img{
+	width:100%;
+}
+
+.slyder-wrapper{
+	padding-top: 80px;
+	width:960px;
+	display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+/*コース*/
+.course{
+width: 960px;
+}
+
+.course-wrapper{
+background-color:#efefef;
+width: 960px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: left;
+}
+
+.course-space{
+	padding-bottom: 64px;
+}
+
+.course-img{
+	width: 480px;
+}
+
+.course-textbox{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+padding-left: 48px;
+padding-right: 48px;
+}
+
+
+
+/*ニュース*/
+.news{
+	width:80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.news-topix{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content:space-between;
+}
+
+.news-box{
+text-align: left;
+padding: 16px;
+}
+
+.news-img{
+	width:235px;
+	padding-bottom: 32px;
+	padding-top:48px;
+}
+
+
+
+/*btn*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 70%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.9;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+
+
+.btn--orange,
+a.btn--orange {
+  color: black;
+  background-color: #ffd61a;
+  	  width: 300px;
+  height:60px;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+  	  width: 300px;
+  height:60px;
+}
+
+
+.yellow-btn{
+	padding-top:56px;
+	padding-bottom: 64px;
+}
+
+
+
+
+
+
+/*アクセス*/
+.access{
+	width:960px;
+	margin-left: auto;
+	margin-left: auto;
+
+}
+
+.access-box{
+background-color: #fafafa;
+}
+
+
+.map-box{
+	width:960px;
+	height:350px;
+}
+
+iframe{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.table-wrapper{
+	width:90%;
+	margin-left: auto;
+margin-right: auto;
+padding-top: 80px;
+padding-bottom: 120px;
+}
+
+
+.table-box{
+	width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin:12px;
+}
+
+
+.table1{
+width:210px;
+	text-align: left;
+}
+
+.table2{
+	text-align: left;
+	font-size: 14px;
+	padding-left:48px
+	width:750px;
+
+}
+
+
+
+/*コンタクト*/
+.contact{
+	width:960px;
+}
+
+
+.table-form{
+width:100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+
+
+#text-box{
+	    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 1px grey;
+
+}
+
+#text-box-big{
+		    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+	border: solid 1px grey;
+	height:328px;
+	padding-bottom: 40px;
+}
+
+ul{
+	list-style:none;
+	text-align: left;
+}
+
+.info-mail{
+text-align: left;	
+}
+
+
+.top-bt{
+	width:60px;
+	height:60px;
+}
+
+.top-bt-wrapper{
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+flex-direction: column;
+}
+
+/*フッター*/
+
+footer{
+	background-color: #707070;
+	height:82px;
+	widows: 100%;
+		display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: 18px;
+}
+
+
+
+/* ピザぴょんアニメ*/
+
+ 
+    .poyooon {
+      -webkit-animation: poyooon 0.9s linear 0s 1;
+      animation: poyooon 0.9s linear 0s 1;
+	}
+	
+    @-webkit-keyframes poyooon {
+      0%   { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+      10%  { -webkit-transform: scale(1.1, 0.9) translate(0%, 5%); }
+      40%  { -webkit-transform: scale(1.2, 0.8) translate(0%, 15%); }
+      50%  { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+      60%  { -webkit-transform: scale(0.9, 1.2) translate(0%, -100%); }
+      75%  { -webkit-transform: scale(0.9, 1.2) translate(0%, -20%); }
+      85%  { -webkit-transform: scale(1.2, 0.8) translate(0%, 15%); }
+      100% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+    }
+    @keyframes poyooon {
+      0%   { transform: scale(1.0, 1.0) translate(0%, 0%); }
+      10%  { transform: scale(1.1, 0.9) translate(0%, 5%); }
+      40%  { transform: scale(1.2, 0.8) translate(0%, 15%); }
+      50%  { transform: scale(1.0, 1.0) translate(0%, 0%); }
+      60%  { transform: scale(0.9, 1.2) translate(0%, -100%); }
+      75%  { transform: scale(0.9, 1.2) translate(0%, -20%); }
+      85%  { transform: scale(1.2, 0.8) translate(0%, 15%); }
+      100% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+	}
+	
+.pizza{
+margin-top:120px;
+}
+
