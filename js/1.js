@@ -37,11 +37,9 @@ randomCharactor("pyonpyon");
 
 
 
-
-
 //ピザはねさせるscript
 // ID値「mitarashi」に対してCSSアニメ―ション「poyooon」を600ミリ秒の間隔を空けてループ再生
-looopAnimation("mitarashi", "poyooon", 600);
+looopAnimation("mitarashi", "poyooon", 300);
 
 
 

@@ -5,16 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- ここから全体的なアニメ用CSSのリンク -->
     <link rel="stylesheet" href="css/seacret.css">
 </head>
 
 <body>
-    <!-- ここからJS用 -->
+    <!-- ここからJS 全体的なアニメ用のhtml -->
+
+    <div class="container">
+    </div>
+
 
     <canvas class="background"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 
     <!-- ここまで -->
+
+
+    <!-- ここから上にのせる背景画像の記述 -->
+
+    <div class="video-wrap">
+        <div class="bg"></div>
+    </div>
+
+    <!-- ここまで -->
+
+
+    <!-- ここから動画 -->
 
     <div class="video-wrap">
         <video src="img/end.mov" autoplay loop muted>
@@ -22,10 +39,24 @@
         </video>
     </div>
 
+    <!-- ここまで -->
 
 
 
+    <!-- ここから全体的なアニメのJS記述 -->
+    <script type="text/javascript">
 
+        window.onload = function () {
+            Particles.init({
+                selector: '.background',
+                sizeVariations: 30,
+                color: [
+                    'yellow', 'rgba(224,245,93,.5)', 'rgba(0,187,221,.2)'
+                ]
+            });
+        };
+
+    </script>
 </body>
 
 </html>

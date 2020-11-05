@@ -27,13 +27,7 @@ body{
 /*ーーーーーーーーーーー*/
 
 
-.video-wrap{
-	background-image: url(../img/end.mov);
-	width:1200px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
-}
+
 
 /*ーーーーーーーーーーー*/
 /*まるまる*/
@@ -70,5 +64,49 @@ body {
   z-index: 1;
 }
 a {
-  color: #0bd;
+  color:yellow;
+}
+
+/* ここから上に重ね透過させるCSS */
+
+.content{
+    width: 200px;
+    height: 150px;
+    background: #000;
+
+    position: relative;
+}
+
+.video-wrap{
+    /*位置の設定*/
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+	background-image: url(../img/end.mov);
+	width:900px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+
+
+
+
+    /*透過の設定*/
+    opacity: 0.5;
+}
+
+p{
+    width: 100%; /*absoluteで位置を設定するときに、幅と高さは必ず必要*/
+    height: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+    /*位置の設定　- 上下中央寄せ*/
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }

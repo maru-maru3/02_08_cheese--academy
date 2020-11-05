@@ -1,5 +1,4 @@
-HTML CSS JSResult
-EDIT ON
+
 window.onload = function () {
     Particles.init({
         selector: '.background',

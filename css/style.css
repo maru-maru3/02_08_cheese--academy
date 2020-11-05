@@ -40,7 +40,8 @@ body{
 
 .pyonpyon span {
     animation: pyon 0.3s linear;
-    position: relative;
+	position: relative;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 @keyframes pyon {
@@ -50,7 +51,24 @@ body{
 }
 
 
+/* レスポンシブ対応の為の記述 */
 
+/* PC用 */
+
+.description img{
+float: left;
+margin: 0 10px 10px 0;
+}
+
+/* スマホ用 */
+
+@media only screen and (max-width:600px){
+	.description img{
+		float: none;
+		display: block;
+		margin:0 auto;
+	}
+}
 
 
 
@@ -69,7 +87,7 @@ body{
 	width:960px;
 	margin-right: auto;
 	margin-left: auto;
-	
+
 }
 
 
@@ -80,12 +98,14 @@ body{
 	align-items: center;
 	text-align: center;
 	height:500px;
+	max-width: cover;
 
 }
 
 .nav{
  width:100%;
 background-color: #efefef;
+
 }
 
 .nav-wrapper{
@@ -96,6 +116,7 @@ width: 960px;
 height: 80px;
 margin-left: auto;
 margin-right: auto;
+max-width: cover;
 }
 
 .title-img {
@@ -136,7 +157,8 @@ width: 60%;
 	display:flex;
 justify-content: space-between;
 font-size: 21px;
-font-weight: bold;
+
+font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1{
@@ -148,6 +170,7 @@ h3{
 	font-size: 24px;
 	padding-top: 64px;
 	padding-bottom: 24px;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 .yellow{
@@ -158,6 +181,7 @@ h4{
 	columns: #222222;
 	font-size: 24px;
 	padding-bottom: 40px;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 .top-catch{
@@ -178,18 +202,7 @@ align-items: center;
 flex-direction: column;
 }
 
-.about-img{
-	width:100%;
-}
 
-.slyder-wrapper{
-	padding-top: 80px;
-	width:960px;
-	display: flex;
-justify-content: center;
-align-items: center;
-
-}
 
 
 
@@ -316,7 +329,9 @@ a.btn--orange:hover {
 	padding-bottom: 64px;
 }
 
-
+.space{
+	height:120px;
+}
 
 
 
@@ -377,6 +392,13 @@ width:210px;
 }
 
 
+#syosai{
+	text-align: left;
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 15px;
+}
+
 
 /*コンタクト*/
 .contact{
@@ -395,11 +417,15 @@ flex-direction: column;
 
 
 #text-box{
-	    padding: 0.5em 1em;
-    margin: 2em 0;
+	    padding: 0.5em 0.5em;
+    margin: 1em 0;
     font-weight: bold;
     border: solid 1px grey;
 
+}
+
+#li-color{
+	font-size: 14px;
 }
 
 #text-box-big{
@@ -407,8 +433,8 @@ flex-direction: column;
     margin: 2em 0;
     font-weight: bold;
 	border: solid 1px grey;
-	height:328px;
-	padding-bottom: 40px;
+	height:180px;
+	padding-bottom: 120px;
 }
 
 ul{
@@ -452,8 +478,8 @@ font-size: 18px;
 
  
     .poyooon {
-      -webkit-animation: poyooon 0.9s linear 0s 1;
-      animation: poyooon 0.9s linear 0s 1;
+      -webkit-animation: poyooon 0.9s linear 0s 3;
+      animation: poyooon 0.9s linear 0s 2.5;
 	}
 	
     @-webkit-keyframes poyooon {
@@ -481,3 +507,55 @@ font-size: 18px;
 margin-top:120px;
 }
 
+
+/* スライダー */
+
+.gallery-p {
+	overflow: hidden;
+	display: flex;
+	width:960px;
+	padding-top: 80px;
+	padding-bottom: 64px;
+}
+
+.gallery {
+	display: flex;
+}
+
+.gallery img {
+	height: 200px; /* スライダーの高さ */
+	width: auto;
+}
+
+@keyframes gallery {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes gallery2 {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+.gallery:first-child {
+	animation: gallery 60s -30s linear infinite; /* スライダーの速度（２番目の数字は１番目の数字の半分にします） */
+}
+
+.gallery:last-child {
+	animation: gallery2 60s linear infinite; /* 60sの部分は上の数字と同じ */
+}
+
+
+/* ホバーしたら動きを止める */
+
+.gallery-p:hover .gallery {
+	animation-play-state: paused;
+}

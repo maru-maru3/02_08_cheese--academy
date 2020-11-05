@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- あらかじめcssを読み込んでいるので設定しなくてOK-->
+    <!-- グーグルフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -70,12 +73,22 @@
                     チーズ職人への就職・転職もサポートします．</p>
             </div>
 
-            <div class="slyder-wrapper">
-                <div><img class="about-img" src="img/about_01.jpg" alt=""></div>
-                <div><img class="about-img" src="img/about_02.jpg" alt=""></div>
-                <div><img class="about-img" src="img/about_03.jpg" alt=""></div>
-                <div><img class="about-img" src="img/about_04.jpg" alt=""></div>
+            <div class="gallery-p">
+                <div class="gallery">
+                    <img src="img/about_01.jpg">
+                    <img src="img/about_02.jpg">
+                    <img src="img/about_03.jpg">
+                    <img src="img/about_04.jpg">
+                </div>
+                <div class="gallery">
+                    <img src="img/about_01.jpg">
+                    <img src="img/about_02.jpg">
+                    <img src="img/about_03.jpg">
+                    <img src="img/about_04.jpg">
+                </div>
             </div>
+
+
 
         </section>
         <section class="course" id="course-section">
@@ -148,6 +161,8 @@
             <td class="yellow-btn">
                 <a href="" class="btn btn--orange">MORE</a>
             </td>
+            <div class="space"></div>
+
         </section>
 
 
@@ -221,7 +236,8 @@
                         <tr>
                             <th class="table1">メールアドレス</th>
                             <th class="table2">
-                                <div id="text-box"><input type="text" name="mail" maxlength="20" value=""></input></div>
+                                <div id="text-box"><input type="text" name="mail" maxlength="10" value=""></input>
+                                </div>
                             </th>
                         </tr>
                         <tr>
@@ -229,17 +245,17 @@
                             </th>
                             <th class="table2">
                                 <ul>
-                                    <li><input type="checkbox">　　起業をしたい</li>
-                                    <li><input type="checkbox">　　チーズ系企業に就職・転職したい</li>
-                                    <li><input type="checkbox">　　チーズと関わる仕事をしており仕事に生かしたい</li>
-                                    <li><input type="checkbox">　　チーズの教養を身につけたい</li>
+                                    <li class="li-color"><input type="checkbox">　　起業をしたい</li>
+                                    <li class="li-color"><input type="checkbox">　　チーズ系企業に就職・転職したい</li>
+                                    <li class="li-color"><input type="checkbox">　　チーズと関わる仕事をしており仕事に生かしたい</li>
+                                    <li class="li-color"><input type="checkbox">　　チーズの教養を身につけたい</li>
                                 </ul>
                             </th>
                         </tr>
                         <tr>
-                            <th class="table1">詳細</th>
+                            <th class="table1" id="syosai">詳細</th>
                             <th class="table2">
-                                <div id="text-box-big"><textarea name="syosai" value=""></textarea>
+                                <div id="text-box-big"><textarea name="syosai" rows="10" cols=""></textarea>
                                 </div>
                             </th>
                         </tr>
@@ -247,7 +263,7 @@
                 </table>
 
                 <td class="yellow-btn">
-                    <a href="" class="btn btn--orange">送信</a>
+                    <a href="mouse.html" class="btn btn--orange">送信</a>
                 </td>
 
             </div>
@@ -276,6 +292,7 @@
 
 
     <script src="js/1.js"></script>
+
 </body>
 
 </html>
